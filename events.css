@@ -75,7 +75,7 @@
 }
 
 .month-menuitem.active {
-  background: #F7DA03  ;
+  background: #24FF00;
   color: #333;
 }
 
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .today .day {
-  background: #F7DA03;
+  background: #24FF00;
   color: #333;
   border-radius: 3px;
 }
@@ -122,7 +122,7 @@ a:hover {
 
 .event a {
   color: #333;
-  border-color: #F7DA03;
+  border-color: #24FF00;
   border-bottom-width: 2px;
 }
 .multi-days a {
