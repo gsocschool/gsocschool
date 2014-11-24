@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="events">
+  <head>
+    <meta charset="utf-8">
+    <meta name="google" value="notranslate" />
+    <link rel="stylesheet" href="mapbox.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nodeschool.io</title>
+  </head>
+  <body class="events">
+    <header>
+      <div class="container">
+        <div class="full">
+          <img src="images/schoollines.png" alt="nodeschoolhouse">
+          <h1 class="name">
+            <span>GSoC</span>
+            <span class="apostrophe"></span>
+            <span>S</span>
+            <span class="c">C</span>
+            <span class="h">H</span>
+            <span>OOL</span>
+          </h1>
+          <h3 class="subtitle" data-i18n="index-header-top">Open source workshops that makes students ready for Google Summer of Code program very early!</h3>
+          <ul class="nav">
+            <li><a href="#" data-i18n="menu-tutorials">Tutorials</a></li>
+            <li><a href="events.html" data-i18n="menu-events">Events</a></li>
+            <li><a href="#" data-i18n="menu-about">About</a></li>
+            <li><a href="#" data-i18n="menu-building-workshops">Build</a></li>
+            <li><a href="#" data-i18n="menu-host">Host</a></li>
+          </ul>
+          <h3 data-i18n="index-header-bottom">Get started by attending our <a class="big-link" href="#workshopper-list">weekly workshops</a> or subscribe to our free <a class="big-link" href="https://groups.google.com/forum/#!forum/gsoc-2015" target="_blank">mailing list</a>.</h3>
+        </div>
+      </div>
+    </header>
+
+    <div class="container workshops" style="background-color: #fff;">
+      <div class="full">
+        <h1 data-i18n="events-header">Past and Future GSoCSchool Events</h1><br><br>
+        <div id="map"></div>
+        <div class="key">
+          <span class="key-past" data-i18n="events-past">Past</span>
+          <span class="key-future" data-i18n="events-future">Future</span>
+        </div>
+      </div>
+      <br><br>
+      <div class="full">
+        <h2 data-i18n="events-header2">There have been <strong><span id="event-count">many</span></strong> events!</h2>
+        <h3 data-i18n="events-header3">If you&apos;re organizing a GSoCSchool event, add it to this site by filling out <a href="https://docs.google.com/forms/d/1vYW-Yw82kt_q7WDgBY6gQqFrg3zuD2rDPXEG-cbq7e4/viewform?usp=form_confirm" target="_blank">this form</a>.</h3>
+        <small data-i18n="events-small">If you need to edit an event you&apos;ve submitted, <a href="https://github.com/gsocschool/GSoCSchool/issues/new">file an issue on gsocschool/organizers.</a></small>
+      </div>
+    </div>
+
+    <div id="calendar">
+      <div class="container" style="background-color: #fff;">
+        <div class="full">
+          <h1>Calendar</h1>
+          <br><br>
+          <div id="calendar-goes-here"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="background-color: #fff;">
+      <footer>
+        <div class="third">
+          <p><strong>gsocschool.io</strong></p>
+          <small>By <a href="https://www.twitter.com/wazery_" target="_blank">Islam Wazery</a></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong data-i18n="footer-contact-header">Contact</strong></li>
+            <li><a href="https://twitter.com/gsocschool" target="_blank">t/@gsocschool</a></li>
+            <li><a href="https://github.com/gsocschool" target="_blank">gh/gsocschool</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-contribute-header">Contribute</strong></li>
+            <li><a href="https://github.com/gsocschool/GSoCSchool/issues/new" target="_blank" data-i18n="footer-contribute-question">Open an Issue</a></li>
+            <li><a href="https://github.com/gsocschool/GSoCSchool/issues" target="_blank" data-i18n="footer-contribute-answer">Answer a Question</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-about-header">About</strong></li>
+            <li><a href="building-workshops.html" data-i18n="footer-about-build">Build a workshopper</a></li>
+            <li><a href="host.html" data-i18n="footer-about-host">Host a workshop</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script id="events" type="text/html">
+      <ul>
+        {{#rows}}
+          <li>{{startdate}} <a href="{{tickets}}">{{name}}</a></li>
+        {{/rows}}
+          <li><a href="events.html">See all events</a></li>
+      </ul>
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tabletop.js"></script>
+    <script type="text/javascript" src="js/sheetsee.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/events.js"></script>
+
+    <script type="text/javascript" src="js/dependencies.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49267600-1', 'nodeschool.io');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>

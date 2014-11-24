@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="index">
+  <head>
+    <meta charset="utf-8">
+    <meta name="google" value="notranslate" />
+    <link rel="stylesheet" href="mapbox.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egyptian Google Summer of Code 2015 Workshops</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="full">
+          <img src="images/schoollines.png" alt="nodeschoolhouse">
+          <h1 class="name">
+            <span>GSoC</span>
+            <span class="apostrophe"></span>
+            <span>S</span>
+            <span class="c">C</span>
+            <span class="h">H</span>
+            <span>OOL</span>
+          </h1>
+          <h3 class="subtitle" data-i18n="index-header-top">Open source workshops that makes students ready for Google Summer of Code program very early!</h3>
+          <ul class="nav">
+            <li><a href="#" data-i18n="menu-tutorials">Tutorials</a></li>
+            <li><a href="events.html" data-i18n="menu-events">Events</a></li>
+            <li><a href="#" data-i18n="menu-about">About</a></li>
+            <li><a href="#" data-i18n="menu-building-workshops">Build</a></li>
+            <li><a href="#prevoius-gsoc" data-i18n="menu-host">Host</a></li>
+          </ul>
+          <h3 data-i18n="index-header-bottom">Get started by attending our <a class="big-link" href="#workshopper-list">weekly workshops</a> or subscribe to our free <a class="big-link" href="https://groups.google.com/forum/#!forum/gsoc-2015" target="_blank">mailing list</a>.</h3>
+        </div>
+      </div>
+    </header>
+
+    <div class="container workshop-header" style="background-color: #fff;">
+      <div class="full">
+        <h1 data-i18n="index-workshop-header">Workshops</h1>
+        <p data-i18n="index-workshop-info">These are in-person hosted workshops, usually free, in which we work on every attendee, to know his/her skills, and to match him/her with the perfect Open Source organization to start hacking on, very early before the program starts.</p>
+        <ul class="inner-nav">
+          <li><a href="#" data-i18n="index-workshop-links-host">Host Your Own (for ex-GSoCers)</a></li>
+          <li><a href="#" data-i18n="index-workshop-links-events">See All Events</a></li>
+          <li><a href="#" data-i18n="index-workshop-links-writeups">Writeups of Past Workshops</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container workshops" style="background-color: #fff;">
+      <div class="third">
+        <div id="map"></div>
+      </div>
+
+      <div class="third upcoming-workshoppers">
+        <h2 data-i18n="index-upcoming-header">Upcoming Workshops</h2>
+        <div id="upcoming-workshops">
+          <div class="loading" data-i18n="index-upcoming-loading">
+            Loading...
+          </div>
+          <div class="empty">
+            <span data-i18n="index-upcoming-no-events">No upcoming workshops. Check out</span> <a href="#" data-i18n="index-upcoming-past-events">past workshops</a><span data-i18n="index-upcoming-past-events2">!</span>
+          </div>
+          <div class="success">
+            <ul></ul>
+            <p><a href="#" class="all-events" data-i18n="index-upcoming-all-events">See all events</a>.</p>
+          </div>
+          <div class="error" data-i18n="index-upcoming-error">
+            Could not load workshops, sorry!
+          </div>
+        </div>
+      </div>
+
+      <div class="third anyone-can-host">
+        <h2 id="prevoius-gsoc" data-i18n="index-host-header">A previous GSoC student?</h2>
+        <p id="event-count"><span data-i18n="index-host-past">There have been a total of</span> <strong class="cnt">?</strong> <span data-i18n="index-host-past2">workshops!</span></p>
+        <p><span data-i18n="index-host-want-to-host">If you are a previous GSoC student or mentor and want to help newcomers to start their path and apply for the upcoming GSoC, and want to organize a workshop please see </span> <a href="host.html" data-i18n="index-host-want-to-host2">Our hosting workshops</a> <span data-i18n="index-host-want-to-host3">page for how to do so.</span></p>
+      </div>
+    </div>
+
+    <div id="workshoppers">
+      <div class="container">
+        <div class="full">
+          <h1 data-i18n="index-workshopper-header">Google Summer of Code</h1>
+          <p data-i18n="index-workshopper-info">Google Summer of Code is an internship program offered by Google every year for Bachelor, Masters, Ph.D students over the globe. It gives them the opporunity to work full time in their summer in an open source project and get mentored by top-notch developers. It also gives them stipends to support them during the program, $5500 which is awesome!</p>
+          <ul class="inner-nav">
+            <li><a href="#workshopper-list" data-i18n="index-workshopper-list-view">View Workshops List</a></li>
+            <li><a href="https://github.com/nodeschool/discussions/issues/new" data-i18n="index-workshopper-list-problem">Ask Questions if Stuck</a></li>
+            <li><a href="https://github.com/nodeschool/discussions" data-i18n="index-workshopper-list-faq">Answer Questions</a></li>
+            <li><a href="building-workshops.html" data-i18n="index-workshopper-list-host">Build a Workshop</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="third">
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell">
+              <code>sudo start hacking</code>
+              <code>learnyounode</code>
+            </div>
+          </div>
+        </div>
+
+        <div class="third">
+          <div class="term">
+            <div class="chrome">
+              <span class="btn btn-term close"></span>
+              <span class="btn btn-term min"></span>
+              <span class="btn btn-term max"></span>
+            </div>
+            <div class="shell">
+              <div class="workshopper">
+                <code>&#xBB; HELLO WORLD</code>
+                <code>&#xBB; BABY STEPS</code>
+                <code>&#xBB; MY FIRST I/O!</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="third">
+          <div id="get-going">
+            <h2 data-i18n="index-get-going-header">Get Going &#x2014;</h2>
+            <p><span data-i18n="index-get-going-info">You just need</span> <span data-i18n="index-get-going-info2"> to attend our workshops, study and work hard till the program starts to get a better chance of getting selected </span></p>
+            <p><span data-i18n="index-get-going-editor">You will also need a</span> <strong data-i18n="index-get-going-editor2">Text Editor</strong><span data-i18n="index-get-going-editor3">, if you don&apos;t have one already, you may want one for editing code. A few options:</span> <a href="http://www.atom.io">Atom</a><span data-i18n="index-get-going-editor4">,</span> <a href="http://www.sublimetext.com/2">Sublime Text</a><span data-i18n="index-get-going-editor5">,</span> <a href="http://macromates.com/download">Textmate</a><span data-i18n="index-get-going-editor6">,</span> <a href="http://brackets.io/">Brackets</a><span data-i18n="index-get-going-editor7">.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="window-pane"><span class="caption">Google Summer of Code session, 2013</span></div>
+
+      <div id="workshopper-list" class="container core-workshoppers" style="background-color: #fff;">
+        <div class="third">
+          <h1 data-i18n="index-workshoppers-core-header">Core</h1>
+          <p data-i18n="index-workshoppers-core-info">These workshops focus on essential skills for applying to Google Summer of Code.</p>
+          <p><span data-i18n="index-workshoppers-core-link-pre">Stuck? Ask a question in the</span> <a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="index-workshoppers-core-link-text">discussion</a><span data-i18n="index-workshoppers-core-link-post">.</span></p>
+        </div>
+        <div class="third">
+          <div id="javascripting" class="workshopper">
+            <h2><a href="#" data-i18n="workshoppers-intro" target="_blank">Introduction</a></h2>
+            <p data-i18n="workshopper-javascripting">Get introduced to the Google Summer of Code program, how it works, and how to apply. Get to know each others, and mentors will write each atendee skills for the next matching workshop</p>
+          </div>
+          <div id="gitit" class="workshopper">
+            <h2><a href="#" data-i18n="workshoppers-git" target="_blank">Learn Git</a></h2>
+            <p data-i18n="workshopper-gitit">To teach Git, and Github basics which is necessary for any Open Source project.</p>
+            <code>sudo apt-get install git...</code>
+          </div>
+        </div>
+        <div class="third">
+          <div id="learnyounode" class="workshopper">
+            <h2><a href="#" data-i18n="workshoppers-skills" target="_blank">Skills Matching</a></h2>
+            <p data-i18n="workshopper-learnyounode">In this workshop we will suggest some Open Source organizations to the atendee from the skills he/she gave to us in the introductory workshop.</p>
+            <code data-i18n="workshopper-learnyounode-command">lets start hacking!</code>
+          </div>
+          <div id="streamadventure" class="workshopper">
+            <h2><a href="#" data-i18n="workshoppers-proposal" target="_blank">Writing a Proposal</a></h2>
+            <p><span data-i18n="workshopper-streamadventure">Learn to write a good and eye catching prposal, the building blocks of it, and what mentors search for. Also we will provide some </span><code>awesome</code><span data-i18n="workshopper-streamadventure2"> </span> accepted proposals from previous students.</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="container elective-workshoppers" style="background-color: #fff;">
+      <div class="third">
+        <h1 data-i18n="index-workshoppers-elective-header">Electives</h1>
+        <p data-i18n="index-workshoppers-elective-info">Good supporting technical topics for students. If you have any idea for a workshop or want to give one, <a href="#" target="_blank">please don't hestiate to do so.</a></p>
+        <p><span data-i18n="index-workshoppers-elective-link-pre">Stuck? Ask a question in the </span> <a href="https://github.com/nodeschool/discussions/issues/new" target="_blank" data-i18n="index-workshoppers-elective-link-text">discussion</a><span data-i18n="index-workshoppers-elective-link-post">.</span></p>
+      </div>
+      <div class="third">
+        <div id="functionaljavascript" class="workshopper">
+          <h2><a href="#" target="_blank">Functional Javascript</a></h2>
+          <p data-i18n="workshopper-functionaljavascript">Learn fundamental functional programming features of JavaScript in vanilla ES5.</p>
+          <code>npm install -g functional-javascript-workshop</code>
+        </div>
+        <div id="levelmeup" class="workshopper">
+          <h2><a href="#" target="_blank">Design Patterns</a></h2>
+          <p data-i18n="workshopper-levelmeup">Learn to use design patterns in your software.</p>
+          <code>Singletom, Factory, Observer, etc..</code>
+        </div>
+      </div>
+
+      <div class="third">
+        <div id="shader-school" class="workshopper">
+          <h2><a href="#" target="_blank">Ruby on Rails</a></h2>
+          <p data-i18n="workshopper-shader-school">Learn the fundamentals of Ruby on Rails.</p>
+          <code>rails new project</code>
+        </div>
+        <div id="bytewiser" class="workshopper">
+          <h2><a href="#" target="_blank">Unit Testing</a></h2>
+          <p data-i18n="workshopper-bytewiser">Learn how to write unit tests for your software.</p>
+          <code>assert(adder.add(1234, 988) == 2222);</code>
+        </div>
+        </div>
+      </div>
+
+    <div class="container" style="background-color: #fff;">
+      <footer>
+        <div class="third">
+          <p><strong>gsocschool.io</strong></p>
+          <small><span data-i18n="by">By</span> <a href="https://twitter.com/wazery_" target="_blank">Islam Wazery</a><span></span></small>
+        </div>
+        <div class="two-thirds">
+          <ul>
+            <li><strong data-i18n="footer-contact-header">Contact</strong></li>
+            <li><a href="https://twitter.com/wazery_" target="_blank">t/@wazery_</a></li>
+            <li><a href="https://github.com/gsocschool" target="_blank">gh/gsocschool</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-contribute-header">Contribute</strong></li>
+            <li><a href="https://github.com/gsocschool/GSoCSchool/issues/new" target="_blank" data-i18n="footer-contribute-question">Open an Issue</a></li>
+            <li><a href="https://github.com/gsocschool/GSoCSchool/issues" target="_blank" data-i18n="footer-contribute-answer">Answer a Question</a></li>
+          </ul>
+          <ul>
+            <li><strong data-i18n="footer-about-header">About</strong></li>
+            <li><a href="host.html" data-i18n="footer-about-host">Host a workshop</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script id="events" type="text/html">
+      {{#rows}}
+        <li>{{startdate}} <a href="{{tickets}}">{{name}}</a></li>
+      {{/rows}}
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tabletop.js"></script>
+    <script type="text/javascript" src="js/sheetsee.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/dependencies.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-49267600-1', 'nodeschool.io');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
